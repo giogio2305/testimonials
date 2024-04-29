@@ -184,8 +184,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
             </div>
+            <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
         </div>
     </div>
 </div>
@@ -206,6 +206,10 @@
         navigation: {
             nextEl: ".slick-next",
             prevEl: ".slick-prev",
+        },
+        // If we need pagination
+        pagination: {
+            el: ".swiper-pagination",
         },
     });
 </script>
