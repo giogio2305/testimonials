@@ -1,0 +1,409 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+    @import url("https://creativemilkshake.com/cdn/shop/t/27/assets/all.min.css?v=44728044530659099931660033155");
+
+    .sora {
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    #testimonials {
+    width: 100%;
+    position: relative;
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+    background-color: rgba(221, 212, 246, 1);
+    }
+    .container, .swiper-wrapper{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.swiper-wrapper {
+    position: relative;
+    padding: 0px 225px;
+}
+.section-title{
+    color: rgba(51, 26, 126, 1);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px !important;
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+.swiper {
+    position: relative;
+    padding-bottom: 80px !important;
+}
+.swiper-slide{
+    width: 300px !important;
+    position: relative;
+    height: inherit !important;
+    background: #FEFAE0;
+    border-radius: 25px;
+    text-align: left !important;
+    margin-bottom: 40px !important;
+    margin: 0 25px;
+    padding: 28px 48px !important;
+}
+.swiper-slide:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%) translateY(20px);
+    border-top: 20px solid #FEFAE0;
+}
+.swiper-slide .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.swiper-slide .content .desc {
+    color: #331A7E;
+    font-size: 14px;
+    line-height: 1.7;
+    position: relative;
+}
+.swiper-slide .content .desc:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 20px;
+    margin-bottom: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='20' viewBox='0 0 25 20' fill='none'%3E%3Cpath d='M24.6023 0V5.17046H22.8409C21.8182 5.17046 20.9848 5.32197 20.3409 5.625C19.7348 5.92803 19.2803 6.47728 18.9773 7.27273C18.6742 8.0303 18.5227 9.09091 18.5227 10.4545V14.6023L16.8182 11.0795C17.0833 10.8523 17.4621 10.6818 17.9545 10.5682C18.447 10.4167 18.9962 10.3409 19.6023 10.3409C20.928 10.3409 22.0455 10.7576 22.9545 11.5909C23.8636 12.3864 24.3182 13.5227 24.3182 15C24.3182 16.4015 23.8826 17.5947 23.0114 18.5795C22.1402 19.5265 20.8902 20 19.2614 20C18.2008 20 17.2159 19.7538 16.3068 19.2614C15.4356 18.7689 14.7159 17.9356 14.1477 16.7614C13.6174 15.5871 13.3523 13.9962 13.3523 11.9886V11.1364C13.3523 8.44697 13.7311 6.28788 14.4886 4.65909C15.2841 3.0303 16.4205 1.85606 17.8977 1.13637C19.375 0.378789 21.1932 0 23.3523 0H24.6023ZM11.25 0V5.17046H9.48864C8.46591 5.17046 7.63258 5.32197 6.98864 5.625C6.38258 5.92803 5.92803 6.47728 5.625 7.27273C5.32197 8.0303 5.17045 9.09091 5.17045 10.4545V14.6023L3.46591 11.0795C3.73106 10.8523 4.10985 10.6818 4.60227 10.5682C5.0947 10.4167 5.64394 10.3409 6.25 10.3409C7.57576 10.3409 8.69318 10.7576 9.60227 11.5909C10.5114 12.3864 10.9659 13.5227 10.9659 15C10.9659 16.4015 10.5303 17.5947 9.65909 18.5795C8.78788 19.5265 7.53788 20 5.90909 20C4.84849 20 3.86364 19.7538 2.95455 19.2614C2.08333 18.7689 1.36364 17.9356 0.795455 16.7614C0.265152 15.5871 0 13.9962 0 11.9886V11.1364C0 8.44697 0.378788 6.28788 1.13636 4.65909C1.93182 3.0303 3.06818 1.85606 4.54545 1.13637C6.02273 0.378789 7.84091 0 10 0H11.25Z' fill='%23331A7E'/%3E%3C/svg%3E%0A");
+}
+.swiper-slide .content .desc p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.swiper-slide .content .details {
+    border-top: solid 2px #331A7E;
+    padding-top: 20px;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+}
+.swiper-slide .app-testimonials .content .title{
+    font-size: 14px;
+    color: #331A7E;
+}
+.swiper-slide .content .details .title{
+    color: #331A7E;
+}
+.swiper-slide .content .details .sub-title {
+    font-size: 14px;
+    color: #331A7E;
+}
+.slick-arrow {
+    position: absolute;
+    bottom: 0 !important;
+    width: 50px;
+    height: 50px;
+    background: #DDD4F6 url("https://creativemilkshake.com/cdn/shop/t/27/assets/arrow-testi.svg") no-repeat center;
+    border: solid 3px #331A7E;
+    border-radius: 25px;
+    text-indent: -9999px;
+    z-index: 100;
+    cursor: pointer;
+}
+.slick-arrow.slick-next {
+    right: calc(50% - 35px);
+    transform: translate(50%);
+}
+.slick-arrow.slick-prev {
+    left: calc(50% - 35px);
+    transform: translate(-50%) rotate(180deg);
+}
+
+@media (max-width: 767.98px) {
+    .section-title{
+        font-size: 25px;
+    }
+    .swiper-slide{
+    width: 70% !important;
+    }
+}
+</style>
+
+<div id="testimonials" class="sora">
+    <div class="container">
+        <h3 class="section-title">There’s nothing like true love 💜</h3>
+        <div class="slide swiper">
+            <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+            <div class="swiper-wrapper draggable" style="padding: 0px 225px;">
+                    
+                <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake is an absolute powerhouse. They created powerful UGC ads for us that have consistently been our top performing creatives. If you’re serious about scaling your brand profitably - you
+                                    need their ad creatives in your arsenal.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">MATT WILLIAMS</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • Shifts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="-2" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    We’ve been working with Creative Milkshake for more than a year now. Since then, our ads have skyrocketed and the performance is absolutely amazing. We were able to double our revenue which has given us
+                                    more flexibility to work on different other stages of the business. Definitely recommend working with Creative Milkshake, especially due to the number of languages they can provide for your business.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">MELVIN VAN BUEREN</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Founder • Meroda</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="-1" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    We worked with the Creative Milkshake team for our launch campaigns and we would highly recommend. They absolutely nailed it, with everything from creative strategy, to finding the perfect talent and ad
+                                    structure. They understood what our brand messaging should be straight away and were able to help us to find the correct voice and tone for ads. Every bit of care was taken to ensure that we were happy
+                                    with every piece of creative. A great group of people who are a pleasure to work with. We will be using their services again and again.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">Donna Ledwidge</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • KeyForHer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-current slick-active slick-center"
+                        style="width: 378px;"
+                        tabindex="0"
+                        data-slick-index="0"
+                        aria-hidden="false"
+                    >
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake was incredible in creating TikTok ads for our brand, DR SMILE, across multiple countries, including Italy, Germany, Spain, France, Portugal, Netherlands, and Sweden. The ad performance
+                                    was outstanding, ranking among the top performers. They delivered exceptional results, they were fast, professional, and delivered on time. Their understanding of TikTok and their ability to create
+                                    captivating content that resonated with our audience impressed us. They are a fantastic partner for driving engagement and conversions. We can't wait to work with them again in the future!
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">Farah Al-Eryani</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Paid Social Manager • DR SMILE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-active" style="width: 378px;" tabindex="0" data-slick-index="1" aria-hidden="false">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    From the day I started working with Creative Milkshake, my experience has been absolutely phenomenal. Mirella, Marina, and the rest of the team are not only fun, prompt, and just a pleasure to work with
+                                    but their creatives have been KILLING it for me on Facebook! I don't even hesitate to put an order in with them because I know the ads will pay for themselves at least 10x over in sales driven. If you're
+                                    serious about performance marketing and you want the best in the business, do not miss the chance to work with them!
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">ALI ARSHAD</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Founder • Brim Digital</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide" style="width: 378px;" tabindex="-1" data-slick-index="2" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    They just get it! In an ever-changing, ever-growing market, Creative Milkshake always hits the mark and is ahead of the social trends. Taking risks and pushing boundaries is what makes the CM team
+                                    strategic trailblazers. Truly, our ads just keep getting sweeter (along with our ROI + CTR)&nbsp;🍒
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">TIANA WESTWOOD</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Head of Content • Sitting Pretty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide" style="width: 378px;" tabindex="-1" data-slick-index="3" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake has been instrumental in our growth! It’s hard to find high-quality ad creative production and we were lucky enough to have found that in Creative Milkshake. Not only were assets
+                                    delivered quickly, they performed beyond what we could have hoped for - helping us scale our user-base 10x last year.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">Brad STEVENS</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • Breakout Clips</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide" style="width: 378px;" tabindex="-1" data-slick-index="4" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake is an absolute powerhouse. They created powerful UGC ads for us that have consistently been our top performing creatives. If you’re serious about scaling your brand profitably - you
+                                    need their ad creatives in your arsenal.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">MATT WILLIAMS</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • Shifts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide" style="width: 378px;" tabindex="-1" data-slick-index="5" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    We’ve been working with Creative Milkshake for more than a year now. Since then, our ads have skyrocketed and the performance is absolutely amazing. We were able to double our revenue which has given us
+                                    more flexibility to work on different other stages of the business. Definitely recommend working with Creative Milkshake, especially due to the number of languages they can provide for your business.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">MELVIN VAN BUEREN</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Founder • Meroda</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide" style="width: 378px;" tabindex="-1" data-slick-index="6" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    We worked with the Creative Milkshake team for our launch campaigns and we would highly recommend. They absolutely nailed it, with everything from creative strategy, to finding the perfect talent and ad
+                                    structure. They understood what our brand messaging should be straight away and were able to help us to find the correct voice and tone for ads. Every bit of care was taken to ensure that we were happy
+                                    with every piece of creative. A great group of people who are a pleasure to work with. We will be using their services again and again.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">Donna Ledwidge</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • KeyForHer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="7" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake was incredible in creating TikTok ads for our brand, DR SMILE, across multiple countries, including Italy, Germany, Spain, France, Portugal, Netherlands, and Sweden. The ad performance
+                                    was outstanding, ranking among the top performers. They delivered exceptional results, they were fast, professional, and delivered on time. Their understanding of TikTok and their ability to create
+                                    captivating content that resonated with our audience impressed us. They are a fantastic partner for driving engagement and conversions. We can't wait to work with them again in the future!
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">Farah Al-Eryani</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Paid Social Manager • DR SMILE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="8" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    From the day I started working with Creative Milkshake, my experience has been absolutely phenomenal. Mirella, Marina, and the rest of the team are not only fun, prompt, and just a pleasure to work with
+                                    but their creatives have been KILLING it for me on Facebook! I don't even hesitate to put an order in with them because I know the ads will pay for themselves at least 10x over in sales driven. If you're
+                                    serious about performance marketing and you want the best in the business, do not miss the chance to work with them!
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">ALI ARSHAD</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Founder • Brim Digital</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="9" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    They just get it! In an ever-changing, ever-growing market, Creative Milkshake always hits the mark and is ahead of the social trends. Taking risks and pushing boundaries is what makes the CM team
+                                    strategic trailblazers. Truly, our ads just keep getting sweeter (along with our ROI + CTR)&nbsp;🍒
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">TIANA WESTWOOD</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Head of Content • Sitting Pretty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="10" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake has been instrumental in our growth! It’s hard to find high-quality ad creative production and we were lucky enough to have found that in Creative Milkshake. Not only were assets
+                                    delivered quickly, they performed beyond what we could have hoped for - helping us scale our user-base 10x last year.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">Brad STEVENS</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • Breakout Clips</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned slick-center" style="width: 378px;" tabindex="-1" data-slick-index="11" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    Creative Milkshake is an absolute powerhouse. They created powerful UGC ads for us that have consistently been our top performing creatives. If you’re serious about scaling your brand profitably - you
+                                    need their ad creatives in your arsenal.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">MATT WILLIAMS</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Co-Founder • Shifts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-center p-4 p-xl-5 d-flex align-items-center justify-content-center slick-swiper-slide slick-cloned" style="width: 378px;" tabindex="-1" data-slick-index="12" aria-hidden="true">
+                        <div class="content">
+                            <div class="desc text-cm-purple-dark mb-4">
+                                <p>
+                                    We’ve been working with Creative Milkshake for more than a year now. Since then, our ads have skyrocketed and the performance is absolutely amazing. We were able to double our revenue which has given us
+                                    more flexibility to work on different other stages of the business. Definitely recommend working with Creative Milkshake, especially due to the number of languages they can provide for your business.
+                                </p>
+                            </div>
+                            <div class="details">
+                                <h6 class="title text-cm-purple-dark mb-0 text-uppercase fw-bold">MELVIN VAN BUEREN</h6>
+                                <p class="sub-title text-cm-purple-dark mb-2">Founder • Meroda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+            </div>
+    </div>
+    </div>
+</div>
+
+    <!-- Swiper configurations -->
+    <script>
+        new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          slidesPerView: 1,
+          spaceBetween: 5,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+        disableOnInteraction: false,
+            },
+          loop: true,
+          navigation: {
+            nextEl: '.slick-next',
+            prevEl: '.slick-prev',
+        },    
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+        </script>
